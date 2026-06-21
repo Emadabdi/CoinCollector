@@ -2,7 +2,7 @@
 - Project name: CoinCollector
 - Unity version: Unity 6000.4.3f1
 - Active game object:
-  - Name: GameObject
+  - Name: GameOverText
   - Tag: Untagged
-  - Layer: Default
+  - Layer: UI
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
