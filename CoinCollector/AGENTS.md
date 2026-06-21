@@ -2,7 +2,7 @@
 - Project name: CoinCollector
 - Unity version: Unity 6000.4.3f1
 - Active game object:
-  - Name: GameManager
-  - Tag: Untagged
+  - Name: Main Camera
+  - Tag: MainCamera
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

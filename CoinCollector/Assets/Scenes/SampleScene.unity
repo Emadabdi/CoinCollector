@@ -480,13 +480,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5321376, y: 0, z: 0, w: 0.84665793}
-  m_LocalPosition: {x: 0, y: 21.4, z: -14.5}
+  m_LocalRotation: {x: 0.3964269, y: 0, z: 0, w: 0.9180664}
+  m_LocalPosition: {x: 0, y: 9.5, z: -15.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 64.3, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 46.71, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2490,7 +2490,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   score: 0
+  targetScore: 6
   scoreText: {fileID: 2110753585}
+  winText: {fileID: 239041182}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
