@@ -5,19 +5,28 @@ public class PlayerController : MonoBehaviour
     public float speed = 5f;
 
     private Rigidbody rb;
+    private float horizontal;
+    private float vertical;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
 
+    void Update()
+    {
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
+    }
+
     void FixedUpdate()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        Vector3 movement = new Vector3(horizontal, 0f, vertical);
 
-        Vector3 movement = new Vector3(horizontal, 0, vertical);
-
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        rb.linearVelocity = new Vector3(
+            movement.x * speed,
+            rb.linearVelocity.y,
+            movement.z * speed
+        );
     }
 }
